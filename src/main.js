@@ -11,7 +11,8 @@ import {
   hideLoadMoreButton,
 } from './js/render-functions.js';
 
-const searchForm = document.querySelector('.search-form');
+// Змінено селектор на .form відповідно до нового HTML
+const searchForm = document.querySelector('.form');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 
 let searchQuery = '';
@@ -90,6 +91,5 @@ async function handleLoadMore() {
     iziToast.error({ message: `Error: ${error.message}` });
   } finally {
     hideLoader();
-    }
-
+  }
 }
