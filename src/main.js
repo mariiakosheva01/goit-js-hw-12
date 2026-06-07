@@ -13,9 +13,7 @@ import {
 
 // Змінено селектор на .form відповідно до нового HTML
 const searchForm = document.querySelector('.form');
-const loadMoreBtn = document.querySelector('.load-more-btn');
-
-let searchQuery = '';
+const loadMoreBtn = document.тз
 let page = 1;
 const perPage = 15;
 
